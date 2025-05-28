@@ -1,0 +1,11 @@
+Pentru debugging:
+- pun loguri în Serial Monitor ca să văd dacă se oprește tot codul sau doar senzorul
+- verific dacă I2C mai răspunde după ce se oprește citirea
+- pun o funcție să afișeze memoria liberă (dacă se poate)
+- fac un test în care resetez senzorul la fiecare 10 sec
+- activez watchdog și verific dacă se resetează automat
+
+Soluții:
+- adaug wdt_reset() dacă watchdog-ul e cauza
+- forțez resetarea magistralei I2C dacă senzorul nu răspunde
+- verific câtă memorie consumă fiecare citire și dacă se eliberează

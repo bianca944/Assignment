@@ -1,0 +1,6 @@
+Am avut un scenariu în care un senzor I2C merge normal, dar se oprește după 30 secunde. Dispozitivul nu mai transmite date. M-am gândit că pot fi mai multe probleme.
+
+Posibile cauze:
+- I2C blocat dacă senzorul rămâne în stare nevalidă
+- Memorie RAM consumată (buffer nu se golește corect)
+- Watchdog-ul nu e activat sau codul nu îl resetează
