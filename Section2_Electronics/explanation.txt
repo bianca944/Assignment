@@ -1,0 +1,5 @@
+Am construit un filtru RC trece-jos folosind un rezistor de 1k ohm și un condensator de 100nF. Am folosit Tinkercad și am testat circuitul cu un generator de semnal setat la 5V și frecvență 1kHz. Pe osciloscop se vede clar diferența dintre semnalul brut (zgomotos) și cel filtrat – filtrul a redus din vârfurile ascuțite.
+
+Am conectat generatorul la rezistor, apoi la condensator, iar ieșirea a fost între rezistor și condensator. Condensatorul a fost legat la GND. Osciloscopul a avut canal A înainte de filtru și canal B după, ca să pot compara.
+
+Am calculat și frecvența de tăiere cu formula f = 1 / (2πRC), care iese cam 1590 Hz. Filtrul funcționează bine pentru zgomot de frecvență mare.
