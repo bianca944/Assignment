@@ -1,0 +1,3 @@
+setup_iot.sh – script care creează un grup, 2 useri și un director partajat /home/iotshared cu permisiuni scriere pentru grup și doar citire pentru alții.
+
+
