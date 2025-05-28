@@ -1,0 +1,16 @@
+Am făcut un audit pe o aplicație web care rulează pe un dispozitiv IoT (ESP32, gen stație meteo). Dispozitivul trimite date prin HTTP și are un mic server web. Nu există autentificare sau criptare.
+
+Am făcut un test teoretic cu nmap și wireshark:
+- portul 80 este deschis
+- datele circulă în clar
+- nu există autentificare la pagina web
+- OTA update fără semnătură digitală
+- lipsă firewall sau limitări
+
+Soluțiile propuse:
+- trecerea de la HTTP la HTTPS
+- login pe pagină cu user/parolă
+- verificare semnătură firmware la update
+- firewall și limitare număr cereri brute-force
+
+Sunt probleme de bază dar importante, pentru că datele și controlul pot fi interceptate ușor.
